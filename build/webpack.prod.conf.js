@@ -151,7 +151,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         inject: {
           foo: 'bar'
         },
-        headless: false,
+        headless: true,
         renderAfterDocumentEvent: 'render-event', // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上。
         args: ['--no-sandbox', '--disable-setuid-sandbox']
       })

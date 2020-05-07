@@ -1,3 +1,9 @@
+<!--
+ * @Autor: dingxiaolin
+ * @Date: 2020-04-29 23:14:33
+ * @LastEditors: dingxiaolin
+ * @LastEditTime: 2020-04-30 17:03:23
+ -->
 <template>
   <div class="hello">
     <h1>second</h1>
@@ -9,31 +15,45 @@
 </template>
 
 <script>
-import VueMetaInfo from '../assets/vue-meta-info.js'
+import VueMetaInfo from "../assets/vue-meta-info.js";
 export default {
-  name: 'HelloWorld',
-  metaInfo: VueMetaInfo.first,
-  data () {
+  name: "HelloWorld",
+  metaInfo: {
+    title: "我是一个title[first]",
+    meta: [
+      {
+        name: "keywords",
+        content: "关键字1,关键字1,关键字1"
+      },
+      {
+        name: "description",
+        content: "这是一段网页的描述1"
+      }
+    ]
+  },
+  data() {
     return {
-      msg1: 'Welcome to first',
-      msg2: 'Welcome to second',
-      msg3: 'Welcome to third'
-    }
+      msg1: "Welcome to first",
+      msg2: "Welcome to second",
+      msg3: "Welcome to third"
+    };
   },
   methods: {
-    linkRouter (path) {
-      this.$router.push({path: path})
+    linkRouter(path) {
+      this.$router.push({ path: path });
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1 {
-    font-weight: normal;
-  }
-  h2 {
-    font-weight: normal; font-size: 14px; color: #2c3e50;
-  }
+h1 {
+  font-weight: normal;
+}
+h2 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #2c3e50;
+}
 </style>
