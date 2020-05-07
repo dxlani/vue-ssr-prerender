@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY ./package.json /app/
 
+RUN yum install libX11-devel --nogpg
+
 RUN cnpm install --allow-root
 
 COPY . /app/
