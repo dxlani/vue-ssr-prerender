@@ -2,7 +2,7 @@
  * @Autor: dingxiaolin
  * @Date: 2020-04-29 23:14:33
  * @LastEditors: dingxiaolin
- * @LastEditTime: 2020-04-30 09:56:47
+ * @LastEditTime: 2020-05-09 23:17:53
  -->
 <template>
   <div class="hello">
@@ -18,7 +18,7 @@
 import VueMetaInfo from "../assets/vue-meta-info.js";
 export default {
   name: "HelloWorld",
-  metaInfo: VueMetaInfo.first,
+  metaInfo: VueMetaInfo.third,
   data() {
     return {
       msg1: "Welcome to first",

@@ -1,6 +1,12 @@
+/*
+ * @Autor: dingxiaolin
+ * @Date: 2020-05-07 22:50:01
+ * @LastEditors: dingxiaolin
+ * @LastEditTime: 2020-05-09 23:17:05
+ */
 export default {
   first: {
-    title: '我是一个title[first]',
+    title: '我是1个title[first]',
     meta: [
       {
         name: 'keywords',
@@ -13,7 +19,7 @@ export default {
     ]
   },
   second: {
-    title: '我是一个title[second]',
+    title: '我是2个title[second]',
     meta: [
       {
         name: 'keywords',
@@ -26,7 +32,7 @@ export default {
     ]
   },
   third: {
-    title: '我是一个title[third]',
+    title: '我是3个title[third]',
     meta: [
       {
         name: 'keywords',

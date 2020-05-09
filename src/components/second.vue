@@ -2,7 +2,7 @@
  * @Autor: dingxiaolin
  * @Date: 2020-04-29 23:14:33
  * @LastEditors: dingxiaolin
- * @LastEditTime: 2020-04-30 17:03:23
+ * @LastEditTime: 2020-05-09 23:17:45
  -->
 <template>
   <div class="hello">
@@ -18,19 +18,7 @@
 import VueMetaInfo from "../assets/vue-meta-info.js";
 export default {
   name: "HelloWorld",
-  metaInfo: {
-    title: "我是一个title[first]",
-    meta: [
-      {
-        name: "keywords",
-        content: "关键字1,关键字1,关键字1"
-      },
-      {
-        name: "description",
-        content: "这是一段网页的描述1"
-      }
-    ]
-  },
+  metaInfo: VueMetaInfo.second,
   data() {
     return {
       msg1: "Welcome to first",
