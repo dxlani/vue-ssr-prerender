@@ -2,7 +2,7 @@
  * @Autor: dingxiaolin
  * @Date: 2020-05-07 22:50:01
  * @LastEditors: dingxiaolin
- * @LastEditTime: 2020-05-22 06:43:36
+ * @LastEditTime: 2020-05-22 07:02:40
 --> 
 <template>
   <div class="hello">
@@ -37,7 +37,11 @@ export default {
       this.$router.push({ path: path, query: { id } });
     }
   },
-  create() {
+  created() {
+    console.log("process.env.NAME", process.env.NAME);
+    console.log("TZ", process.env.TZ);
+  },
+  mounted() {
     console.log("process.env.NAME", process.env.NAME);
     console.log("TZ", process.env.TZ);
   }
